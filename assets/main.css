@@ -28,7 +28,7 @@ dl, dd, ol, ul, figure {
 * Basic styling
 */
 
- figcaption, p, body, ul, ol {
+ figcaption, p, ul, ol {
   font-family: "Lora";
   font-weight:400;
   font-size: 25px;
@@ -43,8 +43,8 @@ h2 {
   font-size: 25px;
 }
 
-body {
-  background-image: url('../images/unsplash-jade-bg.jpg');
+* {
+  background-color: #83c98a;
 }
 
 header {
@@ -71,11 +71,11 @@ body {
   * Site header
   */
   .site-header {
-    border-top: 5px solid #d4cbcb;
-    border-bottom: 1px solid #d4cbcb;
-    min-height: 56px;
-    position: relative;
-    margin-bottom: 20px;}
+    border-top: 5px solid black;
+    padding: 10px 0;
+    font: 400 16px/1.5 "Noto Sans"
+    font: 12px "Noto Sans"
+}
 
 .page_wrpr {
   margin-left: 0px;
@@ -83,7 +83,7 @@ body {
 }
 
 .site-footer {
-  border-top: 5px solid white;
+  border-top: 5px solid black;
   padding: 10px 0;
   font: 400 16px/1.5 "Noto Sans"
   font: 12px "Noto Sans"
@@ -102,6 +102,9 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  border-width:2px;
+  border-style:solid;
+  border-color:#000;
 }
 
 /* Change the color of links on hover */
