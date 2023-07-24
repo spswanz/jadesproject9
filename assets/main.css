@@ -18,7 +18,7 @@
 
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+dl, dd, ol, ul, figure, a {
   margin: 0;
   padding: 0;
   color: #000
@@ -28,7 +28,12 @@ dl, dd, ol, ul, figure {
 * Basic styling
 */
 
- figcaption, p, ul, ol {
+a {
+  text-decoration: underline;
+  /* color: #000 */
+}
+
+ figcaption, p, ul, ol, a {
   font-family: "Lora";
   font-weight:400;
   font-size: 25px;
@@ -43,7 +48,7 @@ h2 {
   font-size: 25px;
 }
 
-* {
+body {
   background-color: #83c98a;
 }
 
@@ -54,10 +59,19 @@ header {
 }
 
 
-site-title {
+.site-title {
   font-family:"Lora"
-  color: #000
+  color: #000;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: none;
+  text-align: center;
 }
+
+/* .site-title a {
+
+} */
 
 body {
   font-family: "Lora";
@@ -91,12 +105,14 @@ body {
 
 /* add white background to top nav */
 .topnav {
-  background-color: #FFFFFF;
+  /* background-color: #FFFFFF; */
+  margin-top: 100px;
+  /* display: block; */
 }
 
 /* style links in nav bar */
 .topnav a {
-  float: left;
+  /* float: left; */
   color: #000;
   text-align: center;
   padding: 14px 16px;

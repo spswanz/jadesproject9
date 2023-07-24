@@ -1,8 +1,8 @@
 ---
 layout: map
-title: Forbidden City Map
+title: Forbidden City
 ---
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -10,10 +10,12 @@ title: Forbidden City Map
         <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <link rel="stylesheet" href="css/leaflet.css"><link rel="stylesheet" href="css/L.Control.Locate.min.css">
-        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
-        <link rel="stylesheet" href="css/leaflet-search.css">
-        <link rel="stylesheet" href="css/leaflet-control-geocoder.Geocoder.css">
+        <link rel="stylesheet" href="assets/css/leaflet.css">
+        <link rel="stylesheet" href="assets/css/L.Control.Locate.min.css">
+        <link rel="stylesheet" href="assets/css/qgis2web.css">
+        <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="assets/css/leaflet-search.css">
+        <link rel="stylesheet" href="assets/css/leaflet-control-geocoder.Geocoder.css">
         <style>
         html, body, #map {
             width: 100%;
@@ -27,18 +29,19 @@ title: Forbidden City Map
     <body>
         <div id="map">
         </div>
-        <script src="js/qgis2web_expressions.js"></script>
-        <script src="js/leaflet.js"></script><script src="js/L.Control.Locate.min.js"></script>
-        <script src="js/multi-style-layer.js"></script>
-        <script src="js/leaflet.rotatedMarker.js"></script>
-        <script src="js/leaflet.pattern.js"></script>
-        <script src="js/leaflet-hash.js"></script>
-        <script src="js/Autolinker.min.js"></script>
-        <script src="js/rbush.min.js"></script>
-        <script src="js/labelgun.min.js"></script>
-        <script src="js/labels.js"></script>
-        <script src="js/leaflet-control-geocoder.Geocoder.js"></script>
-        <script src="js/leaflet-search.js"></script>
+        <script src="assets/js/qgis2web_expressions.js"></script>
+        <script src="assets/js/leaflet.js"></script>
+        <script src="assets/js/L.Control.Locate.min.js"></script>
+        <script src="assets/js/multi-style-layer.js"></script>
+        <script src="assets/js/leaflet.rotatedMarker.js"></script>
+        <script src="assets/js/leaflet.pattern.js"></script>
+        <script src="assets/js/leaflet-hash.js"></script>
+        <script src="assets/js/Autolinker.min.js"></script>
+        <script src="assets/js/rbush.min.js"></script>
+        <script src="assets/js/labelgun.min.js"></script>
+        <script src="assets/js/labels.js"></script>
+        <script src="assets/js/leaflet-control-geocoder.Geocoder.js"></script>
+        <script src="assets/js/leaflet-search.js"></script>
         <script src="data/0622testcopy_1.js"></script>
         <script src="data/0622test_2.js"></script>
         <script>
@@ -80,6 +83,13 @@ title: Forbidden City Map
             maxNativeZoom: 19
         });
         layer_datanextgiscombasemap_0;
+        var north = L.control({ position: "topright" });
+            north.onAdd = function (map) {
+        var div = L.DomUtil.create("div", "info legend");
+            div.innerHTML = '<img src="file:///Users/sarah/Downloads/northarrow.png" style="width: 40px; height: 40px;">';
+          return div;
+            };
+        north.addTo(map);
         map.addLayer(layer_datanextgiscombasemap_0);
         function pop_0622testcopy_1(feature, layer) {
             layer.on({
@@ -136,7 +146,7 @@ title: Forbidden City Map
                 lineJoin: 'miter',
                 weight: 1.0,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.8,
                 fillColor: 'rgba(255,255,255,1.0)',
                 interactive: true,
             }
@@ -152,7 +162,7 @@ title: Forbidden City Map
                 lineJoin: 'miter',
                 weight: 2.0,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.8,
                 fillColor: 'rgba(0,0,0,1.0)',
                 interactive: true,
             }
@@ -240,7 +250,7 @@ title: Forbidden City Map
                 lineJoin: 'miter',
                 weight: 1,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.8,
                 fillColor: 'rgba(228,30,36,0.5882352941176471)',
                 interactive: true,
             }
@@ -256,7 +266,7 @@ title: Forbidden City Map
                 lineJoin: 'miter',
                 weight: 1,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.8,
                 fillColor: 'rgba(228,109,40,0.8862745098039215)',
                 interactive: true,
             }
@@ -272,7 +282,7 @@ title: Forbidden City Map
                 lineJoin: 'miter',
                 weight: 1,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.8,
                 fillColor: 'rgba(225,151,242,1.0)',
                 interactive: true,
             }
@@ -288,7 +298,7 @@ title: Forbidden City Map
                 lineJoin: 'miter',
                 weight: 1,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.8,
                 fillColor: 'rgba(143,205,153,0.8784313725490196)',
                 interactive: true,
             }
@@ -304,7 +314,7 @@ title: Forbidden City Map
                 lineJoin: 'miter',
                 weight: 1,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.8,
                 fillColor: 'rgba(140,219,228,1.0)',
                 interactive: true,
             }
@@ -320,7 +330,7 @@ title: Forbidden City Map
                 lineJoin: 'miter',
                 weight: 1,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.8,
                 fillColor: 'rgba(237,241,7,1.0)',
                 interactive: true,
             }
@@ -374,7 +384,7 @@ title: Forbidden City Map
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .title += 'Search for a place';
         var baseMaps = {};
-        L.control.layers(baseMaps,{'0622 test<br /><table><tr><td style="text-align: center;"><img src="legend/0622test_2_0.png" /></td><td></td></tr><tr><td style="text-align: center;"><img src="legend/0622test_2_1.png" /></td><td></td></tr><tr><td style="text-align: center;"><img src="legend/0622test_2_2.png" /></td><td></td></tr><tr><td style="text-align: center;"><img src="legend/0622test_2_3.png" /></td><td></td></tr><tr><td style="text-align: center;"><img src="legend/0622test_2_4.png" /></td><td></td></tr><tr><td style="text-align: center;"><img src="legend/0622test_2_5.png" /></td><td></td></tr><tr><td style="text-align: center;"><img src="legend/0622test_2_6.png" /></td><td></td></tr></table>': layer_0622test_2,'<img src="legend/0622testcopy_1.png" /> 0622 test copy': layer_0622testcopy_1,"data.nextgis.com basemap": layer_datanextgiscombasemap_0,},{collapsed:false}).addTo(map);
+        L.control.layers(baseMaps,{'0622 test<br /><table><tr><td style="text-align: center;"><img src="legend/0622test_2_0.png" /></td><td></td></tr><tr><td style="text-align: center;"><img src="legend/0622test_2_1.png" /></td><td></td></tr><tr><td style="text-align: center;"><img src="legend/0622test_2_2.png" /></td><td></td></tr><tr><td style="text-align: center;"><img src="legend/0622test_2_3.png" /></td><td></td></tr><tr><td style="text-align: center;"><img src="legend/0622test_2_4.png" /></td><td></td></tr><tr><td style="text-align: center;"><img src="legend/0622test_2_5.png" /></td><td></td></tr><tr><td style="text-align: center;"><img src="legend/0622test_2_6.png" /></td><td></td></tr></table>': layer_0622test_2,'<img src="legend/0622testcopy_1.png" /> 0622 test copy': layer_0622testcopy_1,"data.nextgis.com basemap": layer_datanextgiscombasemap_0,},{collapsed:true}).addTo(map);
         setBounds();
         var i = 0;
         layer_0622testcopy_1.eachLayer(function(layer) {
