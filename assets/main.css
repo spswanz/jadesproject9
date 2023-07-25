@@ -16,7 +16,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');*/
 
 
-body, h1, h2, h3, h4, h5, h6,
+body, h1, h2, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure, a {
   margin: 0;
@@ -105,17 +105,17 @@ body {
 }
 
 /* add white background to top nav */
-.topnav {
+/* .topnav {
   /* background-color: #FFFFFF; */
-  margin-top: 100px;
+  /* margin-top: 100px; */
   /* display: block; */
-}
+/* } */
 
 /* style links in nav bar */
 .topnav a {
-  /* float: left; */
+  float: left;
   color: #000;
-  text-align: center;
+  text-align: left;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -124,26 +124,80 @@ body {
   border-color:#000;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
+.hamburger-menu ul, li {
+  text-decoration: none;
+  text-align: left;
+  list-style: none;
+}
+
+#hamburger-menu {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border: none;
+    padding: 0px;
+    margin: 20px;
+    background: linear-gradient(
+      to bottom,
+      #3D0E61, #3D0E61 20%,
+      white 20%, white 40%,
+      #3D0E61 40%, #3D0E61 60%,
+      white 60%, white 80%,
+      #3D0E61 80%, #3D0E61 100%
+    );
+}
+
+#hamburger-menu #sidebar-menu {
+    visibilty: hidden;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    background-color: #FFFFFF;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    left: 0;
+}
+#hamburger-input:checked ~ .overlay{
+   visibility: visible;
+  opacity: 0.4;
+}
+
+/* Change the color of links on hover
+/* .topnav a:hover {
   background-color: #FFFF;
   color: jade;
-}
+} */
 
 /* Add a color to the active/current link */
-.topnav a.active {
+/* .topnav a.active {
   background-color: #04AA6D;
   color: white;
+}  */
+@media (min-width: 768px) {
+  .nav-gallery li {
+    border-bottom: none;
+    display: inline-block;
+    border: 1px solid white;
+  }
 }
 
-    @media screen and (max-width: 1024px) {
-       .appPreview {
-          display: block;
-       }
-       .right_content {
-          float: none;
-       }
-       div.MoreInfoterms {
-          width: 100%;
-       }
-    }
+@media (min-width: 768px) {
+  .nav-gallery li {
+    border-bottom: none;
+    display: inline-block;
+    border: 1px solid white;
+  }
+}
+@media (min-width: 768px) {
+  .nav-gallery li {
+    border-bottom: none;
+    display: inline-block;
+    border: 1px solid white;
+  }
+}
