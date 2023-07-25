@@ -2,6 +2,7 @@
 layout: map
 title: Forbidden City
 ---
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -42,8 +43,8 @@ title: Forbidden City
         <script src="assets/js/labels.js"></script>
         <script src="assets/js/leaflet-control-geocoder.Geocoder.js"></script>
         <script src="assets/js/leaflet-search.js"></script>
-        <script src="data/0622testcopy_1.js"></script>
-        <script src="data/0622test_2.js"></script>
+        <script src="data/Palacecenter_2.js"></script>
+        <script src="data/Palaces_3.js"></script>
         <script>
         var highlightLayer;
         function highlightFeature(e) {
@@ -63,7 +64,7 @@ title: Forbidden City
         }
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[39.91755957719148,116.38918098173747],[39.920677514121806,116.3935187608759]]);
+        }).fitBounds([[39.911579942842714,116.38333252118332],[39.92282087248497,116.40010470191939]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -71,18 +72,16 @@ title: Forbidden City
         var bounds_group = new L.featureGroup([]);
         function setBounds() {
         }
-        map.createPane('pane_datanextgiscombasemap_0');
-        map.getPane('pane_datanextgiscombasemap_0').style.zIndex = 400;
-        var layer_datanextgiscombasemap_0 = L.tileLayer('https://tile-a.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-            pane: 'pane_datanextgiscombasemap_0',
+        map.createPane('pane_StamenTonerBackground_0');
+        map.getPane('pane_StamenTonerBackground_0').style.zIndex = 400;
+        var layer_StamenTonerBackground_0 = L.tileLayer('http://a.tile.stamen.com/toner-background/{z}/{x}/{y}.png', {
+            pane: 'pane_StamenTonerBackground_0',
             opacity: 1.0,
-            attribution: '<a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors, CC-BY-SA</a>',
+            attribution: '',
             minZoom: 1,
             maxZoom: 28,
-            minNativeZoom: 0,
-            maxNativeZoom: 19
         });
-        layer_datanextgiscombasemap_0;
+        layer_StamenTonerBackground_0;
         var north = L.control({ position: "topright" });
             north.onAdd = function (map) {
         var div = L.DomUtil.create("div", "info legend");
@@ -90,8 +89,21 @@ title: Forbidden City
           return div;
             };
         north.addTo(map);
-        map.addLayer(layer_datanextgiscombasemap_0);
-        function pop_0622testcopy_1(feature, layer) {
+        map.addLayer(layer_StamenTonerBackground_0);
+        map.createPane('pane_datanextgiscombasemap_1');
+        map.getPane('pane_datanextgiscombasemap_1').style.zIndex = 401;
+        var layer_datanextgiscombasemap_1 = L.tileLayer('https://tile-a.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+            pane: 'pane_datanextgiscombasemap_1',
+            opacity: 1.0,
+            attribution: '<a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors, CC-BY-SA</a>',
+            minZoom: 1,
+            maxZoom: 28,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
+        });
+        layer_datanextgiscombasemap_1;
+        map.addLayer(layer_datanextgiscombasemap_1);
+        function pop_Palacecenter_2(feature, layer) {
             layer.on({
                 click: function(e) {
                     for (i in e.target._eventParents) {
@@ -124,20 +136,20 @@ title: Forbidden City
                         <td>' + (feature.properties['Object Cou'] !== null ? autolinker.link(feature.properties['Object Cou'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Image</th>\
-                        <td>' + (feature.properties['Image'] !== null ? '<img src="images/' + String(feature.properties['Image']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
-                    </tr>\
-                    <tr>\
                         <th scope="row">url</th>\
                         <td>' + (feature.properties['url'] !== null ? autolinker.link(feature.properties['url'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">html</th>\
+                        <td>' + (feature.properties['html'] !== null ? autolinker.link(feature.properties['html'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_0622testcopy_1_0() {
+        function style_Palacecenter_2_0() {
             return {
-                pane: 'pane_0622testcopy_1',
+                pane: 'pane_Palacecenter_2',
                 radius: 6.4,
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
@@ -151,9 +163,9 @@ title: Forbidden City
                 interactive: true,
             }
         }
-        function style_0622testcopy_1_1() {
+        function style_Palacecenter_2_1() {
             return {
-                pane: 'pane_0622testcopy_1',
+                pane: 'pane_Palacecenter_2',
                 radius: 1.4,
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
@@ -167,35 +179,35 @@ title: Forbidden City
                 interactive: true,
             }
         }
-        map.createPane('pane_0622testcopy_1');
-        map.getPane('pane_0622testcopy_1').style.zIndex = 401;
-        map.getPane('pane_0622testcopy_1').style['mix-blend-mode'] = 'normal';
-        var layer_0622testcopy_1 = new L.geoJson.multiStyle(json_0622testcopy_1, {
+        map.createPane('pane_Palacecenter_2');
+        map.getPane('pane_Palacecenter_2').style.zIndex = 402;
+        map.getPane('pane_Palacecenter_2').style['mix-blend-mode'] = 'normal';
+        var layer_Palacecenter_2 = new L.geoJson.multiStyle(json_Palacecenter_2, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_0622testcopy_1',
-            layerName: 'layer_0622testcopy_1',
-            pane: 'pane_0622testcopy_1',
-            onEachFeature: pop_0622testcopy_1,
+            dataVar: 'json_Palacecenter_2',
+            layerName: 'layer_Palacecenter_2',
+            pane: 'pane_Palacecenter_2',
+            onEachFeature: pop_Palacecenter_2,
             pointToLayers: [function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_0622testcopy_1_0(feature));
+                return L.circleMarker(latlng, style_Palacecenter_2_0(feature));
             },function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_0622testcopy_1_1(feature));
+                return L.circleMarker(latlng, style_Palacecenter_2_1(feature));
             },
         ]});
-        bounds_group.addLayer(layer_0622testcopy_1);
-        map.addLayer(layer_0622testcopy_1);
-        function pop_0622test_2(feature, layer) {
+        bounds_group.addLayer(layer_Palacecenter_2);
+        map.addLayer(layer_Palacecenter_2);
+        function pop_Palaces_3(feature, layer) {
             layer.on({
-                ckick: function(e) {
+                click: function(e) {
                     for (i in e.target._eventParents) {
                         e.target._eventParents[i].resetStyle(e.target);
                     }
@@ -226,22 +238,22 @@ title: Forbidden City
                         <td>' + (feature.properties['Object Cou'] !== null ? autolinker.link(feature.properties['Object Cou'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Image</th>\
-                        <td>' + (feature.properties['Image'] !== null ? '<img src="images/' + String(feature.properties['Image']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
-                    </tr>\
-                    <tr>\
                         <th scope="row">url</th>\
                         <td>' + (feature.properties['url'] !== null ? autolinker.link(feature.properties['url'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">html</th>\
+                        <td>' + (feature.properties['html'] !== null ? autolinker.link(feature.properties['html'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_0622test_2_0(feature) {
+        function style_Palaces_3_0(feature) {
             switch(String(feature.properties['Object Cou'])) {
                 case '13':
                     return {
-                pane: 'pane_0622test_2',
+                pane: 'pane_Palaces_3',
                 radius: 60.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,0.023529411764705882)',
@@ -257,7 +269,7 @@ title: Forbidden City
                     break;
                 case '6':
                     return {
-                pane: 'pane_0622test_2',
+                pane: 'pane_Palaces_3',
                 radius: 40.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0392156862745098)',
@@ -273,7 +285,7 @@ title: Forbidden City
                     break;
                 case '4':
                     return {
-                pane: 'pane_0622test_2',
+                pane: 'pane_Palaces_3',
                 radius: 30.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
@@ -289,7 +301,7 @@ title: Forbidden City
                     break;
                 case '3':
                     return {
-                pane: 'pane_0622test_2',
+                pane: 'pane_Palaces_3',
                 radius: 20.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,0.00392156862745098)',
@@ -305,7 +317,7 @@ title: Forbidden City
                     break;
                 case '2':
                     return {
-                pane: 'pane_0622test_2',
+                pane: 'pane_Palaces_3',
                 radius: 16.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,0.00392156862745098)',
@@ -321,7 +333,7 @@ title: Forbidden City
                     break;
                 case '1':
                     return {
-                pane: 'pane_0622test_2',
+                pane: 'pane_Palaces_3',
                 radius: 10.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,0.03529411764705882)',
@@ -337,7 +349,7 @@ title: Forbidden City
                     break;
                 case '0':
                     return {
-                pane: 'pane_0622test_2',
+                pane: 'pane_Palaces_3',
                 radius: 6.0,
                 opacity: 1,
                 color: 'rgba(227,26,28,1.0)',
@@ -346,33 +358,33 @@ title: Forbidden City
                 lineJoin: 'miter',
                 weight: 2.0,
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.8,
                 fillColor: 'rgba(255,255,255,1.0)',
                 interactive: true,
             }
                     break;
             }
         }
-        map.createPane('pane_0622test_2');
-        map.getPane('pane_0622test_2').style.zIndex = 402;
-        map.getPane('pane_0622test_2').style['mix-blend-mode'] = 'normal';
-        var layer_0622test_2 = new L.geoJson(json_0622test_2, {
+        map.createPane('pane_Palaces_3');
+        map.getPane('pane_Palaces_3').style.zIndex = 403;
+        map.getPane('pane_Palaces_3').style['mix-blend-mode'] = 'normal';
+        var layer_Palaces_3 = new L.geoJson(json_Palaces_3, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_0622test_2',
-            layerName: 'layer_0622test_2',
-            pane: 'pane_0622test_2',
-            onEachFeature: pop_0622test_2,
+            dataVar: 'json_Palaces_3',
+            layerName: 'layer_Palaces_3',
+            pane: 'pane_Palaces_3',
+            onEachFeature: pop_Palaces_3,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_0622test_2_0(feature));
+                return L.circleMarker(latlng, style_Palaces_3_0(feature));
             },
         });
-        bounds_group.addLayer(layer_0622test_2);
-        map.addLayer(layer_0622test_2);
+        bounds_group.addLayer(layer_Palaces_3);
+        map.addLayer(layer_Palaces_3);
         var osmGeocoder = new L.Control.Geocoder({
             collapsed: true,
             position: 'topleft',
@@ -384,28 +396,15 @@ title: Forbidden City
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .title += 'Search for a place';
         var baseMaps = {};
-        L.control.layers(baseMaps,{'0622 test<br /><table><tr><td style="text-align: center;"><img src="legend/0622test_2_0.png" /></td><td></td></tr><tr><td style="text-align: center;"><img src="legend/0622test_2_1.png" /></td><td></td></tr><tr><td style="text-align: center;"><img src="legend/0622test_2_2.png" /></td><td></td></tr><tr><td style="text-align: center;"><img src="legend/0622test_2_3.png" /></td><td></td></tr><tr><td style="text-align: center;"><img src="legend/0622test_2_4.png" /></td><td></td></tr><tr><td style="text-align: center;"><img src="legend/0622test_2_5.png" /></td><td></td></tr><tr><td style="text-align: center;"><img src="legend/0622test_2_6.png" /></td><td></td></tr></table>': layer_0622test_2,'<img src="legend/0622testcopy_1.png" /> 0622 test copy': layer_0622testcopy_1,"data.nextgis.com basemap": layer_datanextgiscombasemap_0,},{collapsed:true}).addTo(map);
+        L.control.layers(baseMaps,{'Palaces<br /><table><tr><td style="text-align: center;"><img src="legend/Palaces_3_130.png" /></td><td>13</td></tr><tr><td style="text-align: center;"><img src="legend/Palaces_3_61.png" /></td><td>6</td></tr><tr><td style="text-align: center;"><img src="legend/Palaces_3_42.png" /></td><td>4</td></tr><tr><td style="text-align: center;"><img src="legend/Palaces_3_33.png" /></td><td>3</td></tr><tr><td style="text-align: center;"><img src="legend/Palaces_3_24.png" /></td><td>2</td></tr><tr><td style="text-align: center;"><img src="legend/Palaces_3_15.png" /></td><td>1</td></tr><tr><td style="text-align: center;"><img src="legend/Palaces_3_06.png" /></td><td>0</td></tr></table>': layer_Palaces_3,'<img src="legend/Palacecenter_2.png" /> Palace center ': layer_Palacecenter_2,"data.nextgis.com basemap": layer_datanextgiscombasemap_1,"Stamen Toner Background": layer_StamenTonerBackground_0,}).addTo(map);
         setBounds();
         var i = 0;
-        layer_0622testcopy_1.eachLayer(function(layer) {
+        layer_Palaces_3.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['Palace Nam'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Arial\', sans-serif;">' + layer.feature.properties['Palace Nam']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_0622testcopy_1'});
-            labels.push(layer);
-            totalMarkers += 1;
-              layer.added = true;
-              addLabel(layer, i);
-              i++;
-        });
-        var i = 0;
-        layer_0622test_2.eachLayer(function(layer) {
-            var context = {
-                feature: layer.feature,
-                variables: {}
-            };
-            layer.bindTooltip((layer.feature.properties['宮殿名'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Arial\', sans-serif;">' + layer.feature.properties['宮殿名']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_0622test_2'});
+            layer.bindTooltip((layer.feature.properties['宮殿名'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Arial\', sans-serif;">' + layer.feature.properties['宮殿名']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_Palaces_3'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -413,21 +412,21 @@ title: Forbidden City
               i++;
         });
         map.addControl(new L.Control.Search({
-            layer: layer_0622test_2,
+            layer: layer_Palacecenter_2,
             initial: false,
             hideMarkerOnCollapse: true,
-            propertyName: 'Palace Nam'}));
+            propertyName: '宮殿名'}));
         document.getElementsByClassName('search-button')[0].className +=
          ' fa fa-binoculars';
-        resetLabels([layer_0622testcopy_1,layer_0622test_2]);
+        resetLabels([layer_Palacecenter_2,layer_Palaces_3]);
         map.on("zoomend", function(){
-            resetLabels([layer_0622testcopy_1,layer_0622test_2]);
+            resetLabels([layer_Palacecenter_2,layer_Palaces_3]);
         });
         map.on("layeradd", function(){
-            resetLabels([layer_0622testcopy_1,layer_0622test_2]);
+            resetLabels([layer_Palacecenter_2,layer_Palaces_3]);
         });
         map.on("layerremove", function(){
-            resetLabels([layer_0622testcopy_1,layer_0622test_2]);
+            resetLabels([layer_Palacecenter_2,layer_Palaces_3]);
         });
         </script>
     </body>
