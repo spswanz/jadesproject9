@@ -49,7 +49,8 @@ h2 {
 }
 
 body {
-  background-color: #83c98a;
+  /* background-color: #b6c887, converted to RGB values, and the last value changes transparency */
+  background: rgba(182, 200, 135, 0.7)
 }
 
 header {
