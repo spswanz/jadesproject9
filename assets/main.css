@@ -37,7 +37,7 @@ a {
   font-family: "Lora";
   font-weight:400;
   font-size: 25px;
-  color: #000
+  color: #000;
 }
 
 h1 {
@@ -58,8 +58,6 @@ header {
   font-weight: 400;
   font-size: 22px;
 }
-
-
 .site-title {
   font-family:"Lora"
   color: #000;
@@ -108,7 +106,7 @@ body {
 .topnav {
   background-color: #FFFFFF;
   margin-top: 100px;
-  display: block;
+  display: inline;
 }
 
 /* style links in nav bar */
