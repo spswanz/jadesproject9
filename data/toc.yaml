@@ -1,0 +1,17 @@
+toc:
+- title: Maps
+  subfolderitems:
+  - page: Forbidden City Map
+    url: ../ForbbidenCityMap.html
+  - page: Inscribed Texts Place Name Map
+    url: ../PlaceNameMap_inscribed_072023.html
+  - page: Published Texts Place Name Map
+    url: ../PlaceNameMap_published_072023.html
+- title: Hindustan Jades Collection
+  subfolderitems:
+  - page: Qian Qing Gong Jades
+  - url: ../QianQingGong_exhibit,md
+  - page: Yi He Xuan Jades
+  - url: ../YiHeXuan_exhibit.md
+  -page: Yong Shou Gong Jades
+  - url: ../YongShouGong_exhibit.md

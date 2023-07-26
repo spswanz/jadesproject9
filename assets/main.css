@@ -2,7 +2,7 @@
 
 
 /* colors used
-  #82b595 jade green
+  #b6c887 jade green
   */
 
 
@@ -104,15 +104,15 @@ body {
   font: 12px "Noto Sans"
 }
 
-/* add white background to top nav */
-/* .topnav {
-  /* background-color: #FFFFFF; */
-  /* margin-top: 100px; */
-  /* display: block; */
-/* } */
+/* add white background to top nav  */
+.topnav {
+  background-color: #FFFFFF;
+  margin-top: 100px;
+  display: block;
+}
 
 /* style links in nav bar */
-.topnav a {
+ .topnav a {
   float: left;
   color: #000;
   text-align: left;
@@ -124,7 +124,7 @@ body {
   border-color:#000;
 }
 
-.hamburger-menu ul, li {
+/* .hamburger-menu ul, li {
   text-decoration: none;
   text-align: left;
   list-style: none;
@@ -139,24 +139,31 @@ body {
     margin: 20px;
     background: linear-gradient(
       to bottom,
-      #3D0E61, #3D0E61 20%,
-      white 20%, white 40%,
-      #3D0E61 40%, #3D0E61 60%,
-      white 60%, white 80%,
-      #3D0E61 80%, #3D0E61 100%
+      black, black 20%,
+      #b6c887 20%, #b6c887 40%,
+      black 40%, black 60%,
+      #b6c887 60%, #b6c887 80%,
+      black 80%, black 100%
     );
 }
-
 #hamburger-menu #sidebar-menu {
     visibilty: hidden;
     position: fixed;
     top: 0;
-    left: -250px;
-    width: 200px;
+    left: -400px;
+    width: 400px;
     height: 100%;
     background-color: #FFFFFF;
     padding: 0px 10px;
     box-sizing: border-box;
+}
+
+#hamburger-menu #sidebar-menu li {
+  margin-bottom: 100px;
+}
+
+#hamburger-menu li, ul {
+  display: initial;
 }
 
 #hamburger-input:checked + #hamburger-menu #sidebar-menu {
@@ -166,7 +173,7 @@ body {
 #hamburger-input:checked ~ .overlay{
    visibility: visible;
   opacity: 0.4;
-}
+} */
 
 /* Change the color of links on hover
 /* .topnav a:hover {
