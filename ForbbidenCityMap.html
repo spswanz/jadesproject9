@@ -43,8 +43,8 @@ title: Forbidden City
         <script src="assets/js/labels.js"></script>
         <script src="assets/js/leaflet-control-geocoder.Geocoder.js"></script>
         <script src="assets/js/leaflet-search.js"></script>
-        <script src="data/Palacecenter_2.js"></script>
-        <script src="data/Palaces_3.js"></script>
+        <script src="assets/js/Palacecenter_2.js"></script>
+        <script src="assets/js/Palaces_3.js"></script>
         <script>
         var highlightLayer;
         function highlightFeature(e) {
@@ -120,8 +120,8 @@ title: Forbidden City
             });
             var popupContent = '<table>\
                     <tr>\
-                        <th scope="row">Palace Nam</th>\
-                        <td>' + (feature.properties['Palace Nam'] !== null ? autolinker.link(feature.properties['Palace Nam'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">Palace Name</th>\
+                        <td>' + (feature.properties['Palace Name'] !== null ? autolinker.link(feature.properties['Palace Name'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">宮殿名</th>\
@@ -132,8 +132,8 @@ title: Forbidden City
                         <td>' + (feature.properties['Pinyin'] !== null ? autolinker.link(feature.properties['Pinyin'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Object Cou</th>\
-                        <td>' + (feature.properties['Object Cou'] !== null ? autolinker.link(feature.properties['Object Cou'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">Object Count</th>\
+                        <td>' + (feature.properties['Object Count'] !== null ? autolinker.link(feature.properties['Object Count'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">url</th>\
@@ -222,8 +222,8 @@ title: Forbidden City
             });
             var popupContent = '<table>\
                     <tr>\
-                        <th scope="row">Palace Nam</th>\
-                        <td>' + (feature.properties['Palace Nam'] !== null ? autolinker.link(feature.properties['Palace Nam'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">Palace Name</th>\
+                        <td>' + (feature.properties['Palace Name'] !== null ? autolinker.link(feature.properties['Palace Name'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">宮殿名</th>\
@@ -234,8 +234,8 @@ title: Forbidden City
                         <td>' + (feature.properties['Pinyin'] !== null ? autolinker.link(feature.properties['Pinyin'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Object Cou</th>\
-                        <td>' + (feature.properties['Object Cou'] !== null ? autolinker.link(feature.properties['Object Cou'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">Object Count</th>\
+                        <td>' + (feature.properties['Object Count'] !== null ? autolinker.link(feature.properties['Object Count'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">url</th>\
