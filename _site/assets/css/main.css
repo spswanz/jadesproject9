@@ -1,0 +1,136 @@
+/*adding google fonts url for each font I want to import)*/
+
+
+/* colors used
+  #82b595 jade green
+  */
+
+
+<style>
+/* English Font Imports */
+  @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');*/
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');
+
+/* Chinese Font Imports */
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');*/
+
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure, a {
+  margin: 0;
+  padding: 0;
+  color: #000
+}
+
+/**
+* Basic styling
+*/
+
+a {
+  text-decoration: underline;
+  /* color: #000 */
+}
+
+ figcaption, p, ul, ol, a {
+  font-family: "Lora";
+  font-weight:400;
+  font-size: 25px;
+  color: #000
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+* {
+  background-color: #83c98a;
+}
+
+header {
+  font-family: "Lora"
+  font-weight: 400;
+  font-size: 22px;
+}
+
+
+.site-title {
+  font-family:"Lora"
+  color: #000;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* .site-title a {
+
+} */
+
+body {
+  font-family: "Lora";
+  font-weight: 400;
+  font-size: 12px
+  line-height: 150%;
+  color: #000
+  }
+
+  /**
+  * Site header
+  */
+  .site-header {
+    border-top: 5px solid black;
+    padding: 10px 0;
+    font: 400 16px/1.5 "Noto Sans"
+    font: 12px "Noto Sans"
+}
+
+.page_wrpr {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.site-footer {
+  border-top: 5px solid black;
+  padding: 10px 0;
+  font: 400 16px/1.5 "Noto Sans"
+  font: 12px "Noto Sans"
+}
+
+/* add white background to top nav */
+.topnav {
+  /* background-color: #FFFFFF; */
+  margin-top: 100px;
+  /* display: block; */
+}
+
+/* style links in nav bar */
+.topnav a {
+  /* float: left; */
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-width:2px;
+  border-style:solid;
+  border-color:#000;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #FFFF;
+  color: jade;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
