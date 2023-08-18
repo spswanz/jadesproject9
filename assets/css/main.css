@@ -2,7 +2,7 @@
 
 
 /* colors used
-  #82b595 jade green
+  #96aa82 jade green
   */
 
 
@@ -48,10 +48,6 @@ h2 {
   font-size: 25px;
 }
 
-* {
-  background-color: #83c98a;
-}
-
 header {
   font-family: "Lora"
   font-weight: 400;
@@ -62,11 +58,10 @@ header {
 .site-title {
   font-family:"Lora"
   color: #000;
-  text-align: center;
   font-size: 25px;
   font-weight: 800;
-  text-decoration: none;
-  text-align: center;
+  margin-left: 450px;
+  text-decoration: none
 }
 
 /* .site-title a {
@@ -78,7 +73,10 @@ body {
   font-weight: 400;
   font-size: 12px
   line-height: 150%;
-  color: #000
+  margin-left: 80px;
+  margin-right: 80px;
+  color: #000;
+  background-color: #96aa82
   }
 
   /**
@@ -106,7 +104,8 @@ body {
 /* add white background to top nav */
 .topnav {
   /* background-color: #FFFFFF; */
-  margin-top: 100px;
+  margin-top: 10px;
+  margin-bottom: 30px
   /* display: block; */
 }
 
@@ -131,6 +130,44 @@ body {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #96aa82;
   color: white;
+}
+
+/**
+ * Wrapper
+ */
+ .wrapper {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  /* padding-right: 30px;
+  padding-left: 30px; }
+  @media screen and (max-width: 800px) {
+    .wrapper {
+      max-width: -webkit-calc(800px - (30px));
+      max-width: calc(800px - (30px));
+      padding-right: 15px;
+      padding-left: 15px; } } */
+
+.site-nav {
+  @media screen and (max-width: 600px) {
+    .site-nav {
+      position: absolute;
+      top: 9px;
+      right: 25px;
+      background-color: #FFFF;
+      .site-nav .trigger {
+        clear: both;
+        display: none; }
+      .site-nav:hover .trigger {
+        display: block;
+        padding-bottom: 5px; }
+      .site-nav .page-link {
+        display: block;
+        padding: 5px 10px;
+        margin-left: 20px; }
+        .site-nav .page-link:not(:last-child) {
+          margin-right: 0; } }
+    }
+  }
 }
