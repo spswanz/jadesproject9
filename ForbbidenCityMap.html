@@ -12,24 +12,25 @@ title: Forbidden City
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <link rel="stylesheet" href="assets/css/leaflet.css">
-        <link rel="stylesheet" href="assets/css/L.Control.Locate.min.css">
+        <link rel="stylesheet" href="assets/css/L.Control.Locate.min.css.map">
         <link rel="stylesheet" href="assets/css/qgis2web.css">
         <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
         <link rel="stylesheet" href="assets/css/leaflet-search.css">
         <link rel="stylesheet" href="assets/css/leaflet-control-geocoder.Geocoder.css">
         <style>
-        html, body, #map {
-            width: 100%;
-            height: 100%;
-            padding: 0;
-            margin: 0;
+        #map {
+            width: 800px;
+            height: 600px;
+            border: 10px solid;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
         </style>
         <title></title>
     </head>
     <body>
-        <div id="map">
-        </div>
+        <div id="map"></div>
         <script src="assets/js/qgis2web_expressions.js"></script>
         <script src="assets/js/leaflet.js"></script>
         <script src="assets/js/L.Control.Locate.min.js"></script>
@@ -46,6 +47,9 @@ title: Forbidden City
         <script src="assets/js/Palacecenter_2.js"></script>
         <script src="assets/js/Palaces_3.js"></script>
         <script>
+         window.addEventListener('resize', 
+        () => map.getViewPort().resize());
+
         var highlightLayer;
         function highlightFeature(e) {
             highlightLayer = e.target;
