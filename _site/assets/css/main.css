@@ -115,6 +115,7 @@ header {
 /* Show submenu on mouse hover event */
 .menu > .menu-list > li:hover > .sub-menu {
   display: block;
+  background: #444;
 }
 /* Configure the style of submenu */
 .menu > .menu-list > li > .sub-menu {
