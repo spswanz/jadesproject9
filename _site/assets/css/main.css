@@ -16,7 +16,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');*/
 
 
-body, h1, h2, h3, h4, h5, h6,
+h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure, a {
   margin: 0;
@@ -24,6 +24,21 @@ dl, dd, ol, ul, figure, a {
   color: #000
 }
 
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure, a {
+  font-family: "sans-serif";
+  font-weight: 400;
+  font-size: 12px
+  line-height: 150%;
+  margin-left: 80px;
+  margin-right: 80px;
+  color: #000;
+  background-color: #96aa82
+  }
+body {
+  background-color: #96aa82
+}
 /**
 * Basic styling
 */
@@ -34,7 +49,7 @@ a {
 }
 
  figcaption, p, ul, ol, a {
-  font-family: "Lora";
+  font-family: "sans-serif";
   font-weight:400;
   font-size: 25px;
   color: #000
@@ -49,7 +64,7 @@ h2 {
 }
 
 header {
-  font-family: "Lora"
+  font-family: "sans-serif"
   font-weight: 400;
   font-size: 22px;
 }
@@ -139,17 +154,6 @@ header {
 /* .site-title a {
 
 } */
-
-body {
-  font-family: "Lora";
-  font-weight: 400;
-  font-size: 12px
-  line-height: 150%;
-  margin-left: 80px;
-  margin-right: 80px;
-  color: #000;
-  background-color: #96aa82
-  }
 
   /**
   * Site header
