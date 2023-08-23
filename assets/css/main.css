@@ -16,47 +16,45 @@
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');*/
 
 
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure, a {
+/* Basic styling*/
+p, ol, ul, a {
   margin: 0;
   padding: 0;
   color: #000
 }
 
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure, a {
+p, ol, ul, a {
   font-family: "sans-serif";
   font-weight: 400;
-  font-size: 12px
+  font-size: 20px;
   line-height: 150%;
   margin-left: 80px;
   margin-right: 80px;
   color: #000;
-  background-color: #96aa82
+  /* background-color: #96aa82 */
   }
-body {
-  background-color: #96aa82
+
+p {
+  font-size: 20px
 }
-/**
-* Basic styling
-*/
+
+ul {
+  font-size: 20px
+}
+
+body {
+  background-color: #96aa82;
+  margin-left: 0;
+  margin-right: 0;
+}
 
 a {
   text-decoration: underline;
-  /* color: #000 */
-}
-
- figcaption, p, ul, ol, a {
-  font-family: "sans-serif";
-  font-weight:400;
-  font-size: 20px;
-  color: #000
 }
 
 h1, h2 {
-  font-size: 30px;
+  font-family: "sans-serif";
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -66,17 +64,8 @@ header {
   font-size: 22px;
 }
 
-/* Reset CSS */
-*, *:after, *:before{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-}
 /* menu settings */
-.menu{
+.menu {
   background: #000;
   position: fixed;
   top: 0;
@@ -94,7 +83,7 @@ header {
   cursor: pointer;
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing:0.2em;
 }
 /* make this menu <li>s horizontal */
@@ -140,18 +129,6 @@ header {
   line-height: 0;
   height: 0;
 }
-.site-title {
-  font-family:"Lora"
-  color: #000;
-  font-size: 25px;
-  font-weight: 800;
-  margin-left: 450px;
-  text-decoration: none
-}
-
-/* .site-title a {
-
-} */
 
   /**
   * Site header
@@ -163,32 +140,33 @@ header {
     font: 12px "Noto Sans"
 }
 
-.page_wrpr {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
 .site-footer {
   border-top: 5px solid black;
   padding: 10px 0;
   font: 400 16px/1.5 "Noto Sans"
   font: 12px "Noto Sans"
 }
+
 /**
- * Wrapper
- */
- .wrapper {
-  margin-top: 100px;
-  margin-bottom: 30px;
+ * Wrapper */
+ 
+ .sr-2 {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8%;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-decoration: none;
  }
-  /* padding-right: 30px;
-  padding-left: 30px; }
-  @media screen and (max-width: 800px) {
-    .wrapper {
-      max-width: -webkit-calc(800px - (30px));
-      max-width: calc(800px - (30px));
-      padding-right: 15px;
-      padding-left: 15px; } } */
+ .site-title {
+  font-family:"Lora"
+  color: #000;
+  font-size: 30px;
+  font-weight: 800;
+  text-decoration: none;
+  text-align: center;
+}
 
 .site-nav {
   @media screen and (max-width: 600px) {
