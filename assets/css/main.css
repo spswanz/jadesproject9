@@ -23,7 +23,7 @@ p, ol, ul, a {
   color: #000
 }
 
-p, ol, ul, a {
+p, ol, ul {
   font-family: "sans-serif";
   font-weight: 400;
   font-size: 20px;
@@ -49,7 +49,14 @@ body {
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
+  color: black;
+}
+
+a.site-title {
+  color: white; 
+  background-color: black;
+  text-align: left;
 }
 
 h1, h2 {
@@ -154,18 +161,19 @@ header {
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 8%;
+  margin-top: 90px;
   padding-left: 16px;
   padding-right: 16px;
   text-decoration: none;
+  font-size: 50px;
  }
- .site-title {
+ sr-2.site-title {
   font-family:"Lora"
-  color: #000;
-  font-size: 30px;
-  font-weight: 800;
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 400;
   text-decoration: none;
-  text-align: center;
+  background-color: black;
 }
 
 .site-nav {
