@@ -12,8 +12,7 @@ of Dr. Kristina Kleutghen’s upcoming book "The Local Exotic: Fabricating Forei
 ## Website Content ##
 
 * Interactive map of the Forbidden City jade storage houses
-* IIIF Storyboard viewer for three palace storage houses jade collections
+* IIIF Storyboard viewer for three palace storage houses in Hindustan Jade Collections
 * Project About page and acknowledgements
-
-To help us evaluate our website and resources please contact us at [jadesproject9@gmail.com](jadesproject9@gmail.com).
+* Contact Form: Please help us evaluate our website and resources available!
 
