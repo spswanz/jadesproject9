@@ -1,0 +1,153 @@
+{
+  "@context" : "http://iiif.io/api/presentation/2/context.json",
+  "@id" : "https://sarahrider.github.io/self-manifests/manifests/jade040_sm_manifest_082023.json",
+  "@type" : "sc:Manifest",
+  "label" : "Gourd Shaped Cup",
+  "metadata" : [ ],
+  "description" : [ {
+    "@value" : "This is a self-made manifest of the NPMT Jade Imperial Collection Number 2810.",
+    "@language" : "en"
+  } ],
+  "license" : "https://creativecommons.org/licenses/by/3.0/",
+  "attribution" : "Made and uploaded by Sarah Rider but available as Creative Commons.",
+  "sequences" : [ {
+    "@id" : "http://6eb43db4-d25f-47df-b1d8-7fd2146ffc3e",
+    "@type" : "sc:Sequence",
+    "label" : [ {
+      "@value" : "Normal Sequence",
+      "@language" : "en"
+    } ],
+    "canvases" : [ {
+      "@id" : "http://4cb7110b-189a-4946-b00e-984f164379d2",
+      "@type" : "sc:Canvas",
+      "label" : "Front",
+      "height" : 2122,
+      "width" : 2829,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://aa98d2ea-ba82-456d-8af4-2d5e1fd1844b",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://iiif.archivelab.org/iiif/jade-040-side/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://iiif.archivelab.org/iiif/jade-040-side",
+            "profile" : [ "http://iiif.io/api/image/2/level2.json" ]
+          },
+          "height" : 2122,
+          "width" : 2829
+        },
+        "on" : "http://4cb7110b-189a-4946-b00e-984f164379d2"
+      } ],
+      "related" : ""
+    }, {
+      "@id" : "http://ee01d47d-1bac-4afc-831b-a6166794e0a6",
+      "@type" : "sc:Canvas",
+      "label" : "Exterior with inscription",
+      "height" : 2982,
+      "width" : 2013,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://05f8d332-bffc-402f-a2a4-93982b44fd68",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://iiif.archivelab.org/iiif/jade-040-back-inscript_202308/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://iiif.archivelab.org/iiif/jade-040-back-inscript_202308",
+            "profile" : [ "http://iiif.io/api/image/2/level2.json" ]
+          },
+          "height" : 2982,
+          "width" : 2013
+        },
+        "on" : "http://ee01d47d-1bac-4afc-831b-a6166794e0a6"
+      } ],
+      "related" : ""
+    }, {
+      "@id" : "http://a3c15175-1edc-4e39-8388-bb39af3df4a0",
+      "@type" : "sc:Canvas",
+      "label" : "Ladle side",
+      "height" : 2122,
+      "width" : 2829,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://af32b806-9138-42eb-ae7f-8d395ebf80c1",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://iiif.archivelab.org/iiif/jade-040-side-no-case_202308/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://iiif.archivelab.org/iiif/jade-040-side-no-case_202308",
+            "profile" : [ "http://iiif.io/api/image/2/level2.json" ]
+          },
+          "height" : 2122,
+          "width" : 2829
+        },
+        "on" : "http://a3c15175-1edc-4e39-8388-bb39af3df4a0"
+      } ],
+      "related" : ""
+    }, {
+      "@id" : "http://1dc7cf01-f45c-4ada-b2cf-ce06dc1b1903",
+      "@type" : "sc:Canvas",
+      "label" : "Interior ladle",
+      "height" : 2829,
+      "width" : 2122,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://ff5851c5-2dd4-46bb-872a-719e9ecff9bd",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://iiif.archivelab.org/iiif/jade-040-inside/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://iiif.archivelab.org/iiif/jade-040-inside",
+            "profile" : [ "http://iiif.io/api/image/2/level2.json" ]
+          },
+          "height" : 2829,
+          "width" : 2122
+        },
+        "on" : "http://1dc7cf01-f45c-4ada-b2cf-ce06dc1b1903"
+      } ],
+      "related" : ""
+    }, {
+      "@id" : "http://41eafba6-e4c0-4206-af82-a33ecfba1c38",
+      "@type" : "sc:Canvas",
+      "label" : "Ladle back",
+      "height" : 2122,
+      "width" : 2829,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://d52f1289-0b18-46bd-b3b5-1f4705b15a36",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://iiif.archivelab.org/iiif/jade-040-front/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://iiif.archivelab.org/iiif/jade-040-front",
+            "profile" : [ "http://iiif.io/api/image/2/level2.json" ]
+          },
+          "height" : 2122,
+          "width" : 2829
+        },
+        "on" : "http://41eafba6-e4c0-4206-af82-a33ecfba1c38"
+      } ],
+      "related" : ""
+    } ]
+  } ],
+  "structures" : [ ]
+}
