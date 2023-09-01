@@ -1,0 +1,123 @@
+{
+	"@context": "http://iiif.io/api/presentation/2/context.json",
+	"@id": "http://7dd3ecf3-5625-4b52-bd7a-64f5ba2b3baa",
+	"@type": "sc:Manifest",
+	"label": "Jade053",
+	"metadata": [],
+	"description": [
+		{
+			"@value": "Jade floral-shaped bowl with four petals decoration",
+			"@language": "en"
+		}
+	],
+	"license": "https://creativecommons.org/licenses/by/3.0/",
+	"attribution": "Created by Sarah Rider using images from National Palace Museum Taipei. Available as Creative Commons.",
+	"sequences": [
+		{
+			"@id": "http://6f0c598e-0909-41e7-aa3e-78cccff1c79d",
+			"@type": "sc:Sequence",
+			"label": [
+				{
+					"@value": "Normal Sequence",
+					"@language": "en"
+				}
+			],
+			"canvases": [
+				{
+					"@id": "http://78b174eb-feab-4904-ae36-5b0b2e0bd49b",
+					"@type": "sc:Canvas",
+					"label": "Front of bowl with Imperial Collection Number",
+					"height": 2122,
+					"width": 2829,
+					"images": [
+						{
+							"@context": "http://iiif.io/api/presentation/2/context.json",
+							"@id": "http://b5500437-46fc-41e3-8070-7f8919df2320",
+							"@type": "oa:Annotation",
+							"motivation": "sc:painting",
+							"resource": {
+								"@id": "https://iiif.archivelab.org/iiif/k-1-c-000735-n-000000000-paa/full/full/0/default.jpg",
+								"@type": "dctypes:Image",
+								"format": "image/jpeg",
+								"service": {
+									"@context": "http://iiif.io/api/image/2/context.json",
+									"@id": "https://iiif.archivelab.org/iiif/k-1-c-000735-n-000000000-paa",
+									"profile": [
+										"http://iiif.io/api/image/2/level2.json"
+									]
+								},
+								"height": 2122,
+								"width": 2829
+							},
+							"on": "http://78b174eb-feab-4904-ae36-5b0b2e0bd49b"
+						}
+					],
+					"related": ""
+				},
+				{
+					"@id": "http://7aa96401-62ca-43a5-8e4a-f2d146f2a4f3",
+					"@type": "sc:Canvas",
+					"label": "Front of bowl without Imperial Collection number",
+					"height": 2122,
+					"width": 2829,
+					"images": [
+						{
+							"@context": "http://iiif.io/api/presentation/2/context.json",
+							"@id": "http://f09e94e5-7197-4fe1-8b90-b353b3561e60",
+							"@type": "oa:Annotation",
+							"motivation": "sc:painting",
+							"resource": {
+								"@id": "https://iiif.archivelab.org/iiif/Jade053-front-noid/full/full/0/default.jpg",
+								"@type": "dctypes:Image",
+								"format": "image/jpeg",
+								"service": {
+									"@context": "http://iiif.io/api/image/2/context.json",
+									"@id": "https://iiif.archivelab.org/iiif/Jade053-front-noid",
+									"profile": [
+										"http://iiif.io/api/image/2/level2.json"
+									]
+								},
+								"height": 2122,
+								"width": 2829
+							},
+							"on": "http://7aa96401-62ca-43a5-8e4a-f2d146f2a4f3"
+						}
+					],
+					"related": ""
+				},
+				{
+					"@id": "http://24e156a4-e6c4-4d01-a6d3-02b6fcaed6aa",
+					"@type": "sc:Canvas",
+					"label": "Bottom",
+					"height": 2122,
+					"width": 2829,
+					"images": [
+						{
+							"@context": "http://iiif.io/api/presentation/2/context.json",
+							"@id": "http://974b600b-9962-4303-9904-c88793edb735",
+							"@type": "oa:Annotation",
+							"motivation": "sc:painting",
+							"resource": {
+								"@id": "https://iiif.archivelab.org/iiif/jade053-bottom/full/full/0/default.jpg",
+								"@type": "dctypes:Image",
+								"format": "image/jpeg",
+								"service": {
+									"@context": "http://iiif.io/api/image/2/context.json",
+									"@id": "https://iiif.archivelab.org/iiif/jade053-bottom",
+									"profile": [
+										"http://iiif.io/api/image/2/level2.json"
+									]
+								},
+								"height": 2122,
+								"width": 2829
+							},
+							"on": "http://24e156a4-e6c4-4d01-a6d3-02b6fcaed6aa"
+						}
+					],
+					"related": ""
+				}
+			]
+		}
+	],
+	"structures": []
+}
