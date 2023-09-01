@@ -42,3 +42,11 @@
   background-color: #666;
    color: white;
 }
+
+/* Image settings */
+.img {
+  border-radius: 8px;
+  border: 1px solid;
+  max-width: 100%;
+  height: auto;
+}
