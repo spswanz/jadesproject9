@@ -1,0 +1,61 @@
+{
+	"@context": "http://iiif.io/api/presentation/2/context.json",
+	"@id": "http://050e65ac-289b-4fa5-a44d-2f3929724a6a",
+	"@type": "sc:Manifest",
+	"label": "Jade110",
+	"metadata": [],
+	"description": [
+		{
+			"@value": "Disc (bi) with Imperial Poem in Seal Script (zhuanshu) by the Qianlong Emperor",
+			"@language": "en"
+		}
+	],
+	"license": "https://creativecommons.org/licenses/by/3.0/",
+	"attribution": "Created by Sarah Rider using public images from Cleveland Art Museum. Uploaded and available as Creative Commons. ",
+	"sequences": [
+		{
+			"@id": "http://bef7aa1c-16c8-4938-8c62-6af9f31d57ef",
+			"@type": "sc:Sequence",
+			"label": [
+				{
+					"@value": "Normal Sequence",
+					"@language": "en"
+				}
+			],
+			"canvases": [
+				{
+					"@id": "http://2ead31cf-2a8d-4a12-8368-da777d50e5b3",
+					"@type": "sc:Canvas",
+					"label": "Disc",
+					"height": 4098,
+					"width": 4536,
+					"images": [
+						{
+							"@context": "http://iiif.io/api/presentation/2/context.json",
+							"@id": "http://a1fdc74b-5145-4609-b3ac-35ea6ddf80b0",
+							"@type": "oa:Annotation",
+							"motivation": "sc:painting",
+							"resource": {
+								"@id": "https://iiif.archivelab.org/iiif/Jade110/full/full/0/default.jpg",
+								"@type": "dctypes:Image",
+								"format": "image/jpeg",
+								"service": {
+									"@context": "http://iiif.io/api/image/2/context.json",
+									"@id": "https://iiif.archivelab.org/iiif/Jade110",
+									"profile": [
+										"http://iiif.io/api/image/2/level2.json"
+									]
+								},
+								"height": 4098,
+								"width": 4536
+							},
+							"on": "http://2ead31cf-2a8d-4a12-8368-da777d50e5b3"
+						}
+					],
+					"related": ""
+				}
+			]
+		}
+	],
+	"structures": []
+}

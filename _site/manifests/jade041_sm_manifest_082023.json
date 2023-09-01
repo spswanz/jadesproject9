@@ -1,0 +1,127 @@
+{
+  "@context" : "http://iiif.io/api/presentation/2/context.json",
+  "@id" : "https://sarahrider.github.io/self-manifests/manifests/jade041_sm_manifest_082023.json",
+  "@type" : "sc:Manifest",
+  "label" : "Green jade plate inlaid with gold wire and colored glass",
+  "metadata" : [ ],
+  "description" : [ {
+    "@value" : "Green jade plate inlaid with gold wire and colored glass (1983); Round plate with carved floral patterns (2007)",
+    "@language" : "en"
+  } ],
+  "license" : "https://creativecommons.org/licenses/by/3.0/",
+  "attribution" : "Created and uploaded by Sarah Rider using official images from National Palace Museum, Taiwan. Available as Creative Commons",
+  "sequences" : [ {
+    "@id" : "http://a683f9c4-51ba-4f03-8ec6-c979ed51e230",
+    "@type" : "sc:Sequence",
+    "label" : [ {
+      "@value" : "Normal Sequence",
+      "@language" : "en"
+    } ],
+    "canvases" : [ {
+      "@id" : "http://b1b8160f-af96-403e-b0ec-da63fce30b3d",
+      "@type" : "sc:Canvas",
+      "label" : "Jade front inscription",
+      "height" : 1997,
+      "width" : 3004,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://5c4acd08-a667-432a-8064-612db9b9aa7c",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://iiif.archivelab.org/iiif/jade-041-front-inscription/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://iiif.archivelab.org/iiif/jade-041-front-inscription",
+            "profile" : [ "http://iiif.io/api/image/2/level2.json" ]
+          },
+          "height" : 1997,
+          "width" : 3004
+        },
+        "on" : "http://b1b8160f-af96-403e-b0ec-da63fce30b3d"
+      } ],
+      "related" : ""
+    }, {
+      "@id" : "http://a52389bf-4230-4ac7-b6c7-b9372a1f5698",
+      "@type" : "sc:Canvas",
+      "label" : "Jade back",
+      "height" : 1997,
+      "width" : 3004,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://3e126d3d-c4df-4325-be29-2802437214d5",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://iiif.archivelab.org/iiif/jade-041-back/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://iiif.archivelab.org/iiif/jade-041-back",
+            "profile" : [ "http://iiif.io/api/image/2/level2.json" ]
+          },
+          "height" : 1997,
+          "width" : 3004
+        },
+        "on" : "http://a52389bf-4230-4ac7-b6c7-b9372a1f5698"
+      } ],
+      "related" : ""
+    }, {
+      "@id" : "http://bd4dcb22-91f1-460e-abe9-dbbb905058fe",
+      "@type" : "sc:Canvas",
+      "label" : "Jade back detail",
+      "height" : 3005,
+      "width" : 1998,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://958e7dc4-aaa7-472d-84fa-973ae09f371d",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://iiif.archivelab.org/iiif/jade-041-back-detail/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://iiif.archivelab.org/iiif/jade-041-back-detail",
+            "profile" : [ "http://iiif.io/api/image/2/level2.json" ]
+          },
+          "height" : 3005,
+          "width" : 1998
+        },
+        "on" : "http://bd4dcb22-91f1-460e-abe9-dbbb905058fe"
+      } ],
+      "related" : ""
+    }, {
+      "@id" : "http://edbe91c8-bd60-415f-8b58-cc620ce1c43b",
+      "@type" : "sc:Canvas",
+      "label" : "Jade front detail",
+      "height" : 1997,
+      "width" : 3004,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://b56a6b45-ba1f-48bb-b9e0-8ae64acdfd8b",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://iiif.archivelab.org/iiif/jade-041-inside-detail_202308/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://iiif.archivelab.org/iiif/jade-041-inside-detail_202308",
+            "profile" : [ "http://iiif.io/api/image/2/level2.json" ]
+          },
+          "height" : 1997,
+          "width" : 3004
+        },
+        "on" : "http://edbe91c8-bd60-415f-8b58-cc620ce1c43b"
+      } ],
+      "related" : ""
+    } ]
+  } ],
+  "structures" : [ ]
+}
