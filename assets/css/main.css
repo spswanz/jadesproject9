@@ -46,6 +46,7 @@ body {
   background-color: #96aa82;
   margin-left: 0;
   margin-right: 0;
+  overflow: auto;
 }
 
 a {
@@ -165,6 +166,7 @@ header {
   padding-right: 40px;
   text-decoration: none;
   font-size: 50px;
+  overflow: auto;
  }
 
  sr-2.site-title{
