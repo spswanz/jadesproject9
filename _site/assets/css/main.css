@@ -295,7 +295,7 @@ header {
   height: 11%;
   top: 0;
   left: 0;
-  position: fixed;
+  position: absolute;
   background-color: black;
-  overflow: auto;
+  overflow: hidden;
 }
