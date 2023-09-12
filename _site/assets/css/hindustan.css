@@ -16,6 +16,7 @@
 .content {
   background-color: white;
   padding: 10px;
+  font-family: "sans-serif";
 }
 
 /* The "show" class is added to the filtered elements */
