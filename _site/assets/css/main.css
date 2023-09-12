@@ -299,3 +299,8 @@ header {
   background-color: black;
   overflow: hidden;
 }
+
+.fcf-h3, .fcf-form-group {
+  font-size: 30px;
+  overflow: auto;
+}
