@@ -1,8 +1,11 @@
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 33.33%;
-  display: none; /* Hide columns by default */
+  width: 25%; 
+}
+
+.row {
+  padding: 15px;
 }
 
 /* Clear floats after rows */
@@ -14,9 +17,10 @@
 
 /* Content */
 .content {
-  background-color: white;
-  padding: 10px;
-  font-family: "sans-serif";
+  background-color: black;
+  padding: 5px;
+  font-family: "noto-sans";
+  display: flex;
 }
 
 /* The "show" class is added to the filtered elements */
@@ -45,9 +49,16 @@
 }
 
 /* Image settings */
-.img {
-  border-radius: 8px;
-  border: 1px solid;
-  max-width: 100%;
-  height: auto;
+.content img {
+  border-radius: 1px;
+  border: 1px solid white;
+  max-width: 24%;
+  max-height: 20%;
+}
+
+.content h4 {
+  display: block;
+    font-weight: none;
+    font-size: 15px;
+    color: white;
 }
